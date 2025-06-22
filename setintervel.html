@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: blueviolet;
+        }
+        p{
+            font-size: larger;
+            color: brown;
+        }
+        button{
+            font-size: large;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p id="root"> can you stop me</p>
+    <button id="btn">click me</button>
+    
+</body>
+<script>
+    const p=document.getElementById("root")
+    const btn=document.getElementById("btn")
+    let  num=0;
+    const show=()=>{
+      
+        setInterval(() => {
+            p.innerHTML=`${num}`;
+            num++;
+        },1000);
+
+    }
+            btn.addEventListener("click",show);
+</script>
+</html>

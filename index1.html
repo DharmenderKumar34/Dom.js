@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Background Using JavaScript</title>
+  <style>
+    body{
+        background-color: blue;
+    }
+  </style>
+</head>
+<body>
+
+  <script>
+    // Create heading
+    const heading = document.createElement("h1");
+    heading.textContent = "Click the Button to Change Background Color";
+    document.body.appendChild(heading);
+
+    // Create button
+    const button = document.createElement("button");
+    button.textContent = "Change Color";
+    document.body.appendChild(button);
+
+    // Add style to button (optional)
+    button.style.padding = "10px 20px";
+    button.style.fontSize = "16px";
+    button.style.marginTop = "20px";
+    button.style.cursor = "pointer";
+
+    // Function to change background color
+    function changeBackgroundColor() {
+      document.body.style.backgroundColor = "lightblue";
+    }
+
+    // Add click event to the button
+    button.addEventListener("click", changeBackgroundColor);
+  </script>
+
+</body>
+</html>

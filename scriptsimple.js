@@ -1,0 +1,1 @@
+console.log("✅ normal script loaded (blocks parsing)");

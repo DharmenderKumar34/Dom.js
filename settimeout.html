@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blue;
+            text-align: center;
+            font-size: large;
+        }
+        .para{
+            font-size: larger;
+        }
+        #btn{
+            font-size: larger;
+            background-color: chartreuse;
+        }
+        #ht{
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="para">want to know my name</p>
+        <p id="ht"></p>
+        <button id="btn">click me</button>
+    </div>
+
+    <script>
+        const htt=document.getElementById("ht")
+        const btn=document.querySelector("#btn")
+
+        const ht=()=>{
+           htt.innerHTML= "loading..."
+           setTimeout(()=>{
+                 htt.innerHTML= "Dharmender kumar"
+           },2000)
+        }
+         btn.addEventListener("click",ht)
+
+    </script>
+</body>
+</html>

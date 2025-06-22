@@ -1,0 +1,19 @@
+/* body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+ 
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+} */
+ body{
+   
+    background-color: aqua;
+    text-align: center;
+ }
+ div{
+    display:inline-block;
+    align-items: center;
+        
+ }

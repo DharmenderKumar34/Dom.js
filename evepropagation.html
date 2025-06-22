@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: aquamarine;
+        /* text-align: center; */
+      }
+      .parent {
+        background-color: lightblue;
+        width: 400px;
+        border: 5px solid green ;
+        padding: 50px;
+        margin: 20px;
+      }
+      .child{
+        background-color: cadetblue;
+           width: 220px;
+        border: 5px solid green;
+        padding: 50px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent" id="parentid">
+      <div class="child" id="childid"></div>
+    </div>
+
+    <script>
+      const parentid = document.getElementById("parentid");
+      const childid = document.getElementById("childid");
+
+      const parent = () => {
+        alert("call parent div");
+        // event.stopPropagation();
+      };
+
+      const child = () => {
+        alert("call child div");
+      };
+      parentid.addEventListener("click", parent, true);
+      childid.addEventListener("click", child, true);
+    </script>
+  </body>
+</html>

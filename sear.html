@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+        background-color: aqua;
+      }
+      /* .onclick{
+            color: chartreuse;
+            background-color: brown;
+        } */
+      button {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="para">Plz like the video</p>
+
+    <p class="para">Plz Share this video</p>
+
+    <p>Don't forget to subscribe my Channel</p>
+
+    <h1 id="heading">changed the content of the h1</h1>
+
+    <form action="">
+      <label formale></label>
+      <input type="radio" name="gender" id="" />
+      <label for="">female</label>
+      <input type="radio" name="gender" id="" />
+      <label for="">male</label>
+      <input type="radio" name="gender" id="" />
+      <label for="">malefemale</label>
+    </form>
+    <!-- <Button class="onclick">click me</Button> -->
+    <button onclick="changeContent()">click me</button>
+    <script>
+      const changeContent = () => {
+        // document.getElementById("heading").innerHTML="welcome";
+
+        // const changeheading = document.getElementById("heading");
+        // changeheading.innerHTML = "welcome to pwc";
+        // console.log(document.getElementsByClassName("para"));
+        // console.log(document.getElementsByTagName("p"));
+        // console.log(document.getElementsByName("gender"));
+
+        document.querySelector('#heading').innerHTML="welcome all";
+        console.log(  document.querySelectorAll('p'));
+        
+      };
+
+
+    </script>
+  </body>
+</html>
